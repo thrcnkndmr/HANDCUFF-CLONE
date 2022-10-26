@@ -916,6 +916,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &981941753
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 981941754}
+  m_Layer: 0
+  m_Name: CollectPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &981941754
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981941753}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.562, z: -0.164}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 170338767132859864}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1131251246
 GameObject:
   m_ObjectHideFlags: 3
@@ -1908,6 +1939,7 @@ Transform:
   m_Children:
   - {fileID: 4438584120237937413}
   - {fileID: 5624284518109216076}
+  - {fileID: 981941754}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1984,6 +2016,8 @@ GameObject:
   - component: {fileID: 170338767132859864}
   - component: {fileID: 6106044230253365154}
   - component: {fileID: 6106044230253365155}
+  - component: {fileID: 6106044230253365157}
+  - component: {fileID: 6106044230253365156}
   m_Layer: 0
   m_Name: Policeman
   m_TagString: Untagged
@@ -3453,6 +3487,34 @@ MonoBehaviour:
   dynamicJoystick: {fileID: 1554818892}
   speed: 5
   turnSpeed: 3
+--- !u!136 &6106044230253365156
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654986327927736162}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.37203026
+  m_Height: 2.0785503
+  m_Direction: 1
+  m_Center: {x: -0.049052596, y: 0.53927517, z: 0}
+--- !u!114 &6106044230253365157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654986327927736162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0de91a9584f15b4c98e7da54b83830b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handcuffList: []
+  collectPoint: {fileID: 981941754}
 --- !u!4 &6163804669227739403
 Transform:
   m_ObjectHideFlags: 0
