@@ -135,6 +135,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: criminals (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5454552257922179647, guid: 7d5d53b96c972d648bb4a30d0b1610b3,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5741981438596582947, guid: 7d5d53b96c972d648bb4a30d0b1610b3,
         type: 3}
       propertyPath: m_RootOrder
@@ -215,6 +220,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: criminals (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454552257922179647, guid: 7d5d53b96c972d648bb4a30d0b1610b3,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5741981438596582947, guid: 7d5d53b96c972d648bb4a30d0b1610b3,
         type: 3}
@@ -564,6 +574,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: criminals (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454552257922179647, guid: 7d5d53b96c972d648bb4a30d0b1610b3,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5741981438596582947, guid: 7d5d53b96c972d648bb4a30d0b1610b3,
         type: 3}
@@ -919,6 +934,11 @@ PrefabInstance:
       propertyPath: m_BaseOffset
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5454552257922179647, guid: 7d5d53b96c972d648bb4a30d0b1610b3,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5741981438596582947, guid: 7d5d53b96c972d648bb4a30d0b1610b3,
         type: 3}
       propertyPath: m_RootOrder
@@ -1247,6 +1267,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: criminals (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454552257922179647, guid: 7d5d53b96c972d648bb4a30d0b1610b3,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5741981438596582947, guid: 7d5d53b96c972d648bb4a30d0b1610b3,
         type: 3}
@@ -1766,6 +1791,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: criminals (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454552257922179647, guid: 7d5d53b96c972d648bb4a30d0b1610b3,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5741981438596582947, guid: 7d5d53b96c972d648bb4a30d0b1610b3,
         type: 3}
@@ -2551,6 +2581,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: criminals
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454552257922179647, guid: 7d5d53b96c972d648bb4a30d0b1610b3,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5741981438596582947, guid: 7d5d53b96c972d648bb4a30d0b1610b3,
         type: 3}

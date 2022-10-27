@@ -1,14 +1,20 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
+using UnityEngine.AI;
 
 public class CollectingCriminal : MonoBehaviour
 {
+
+    public bool canFollow;
+    public Transform targetTransform;
+    private NavMeshAgent navCriminal;
     private bool isCriminalCollected;
+    private HandcuffManager handcuffManager;
 
     private void Start()
     {
+        handcuffManager = HandcuffManager.Instance;
+        navCriminal = GetComponent<NavMeshAgent>();
         isCriminalCollected = false;
     }
 
@@ -20,5 +26,13 @@ public class CollectingCriminal : MonoBehaviour
     public void CriminalCollected()
     {
         isCriminalCollected = true;
+    }
+
+    private void LateUpdate()
+    {
+        if (canFollow)
+        {
+            navCriminal.SetDestination(handcuffManager.collectPoint.position);
+        }
     }
 }

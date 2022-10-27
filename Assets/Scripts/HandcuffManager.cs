@@ -1,16 +1,19 @@
+using System;
 using System.Collections.Generic;
+using Blended;
 using UnityEngine;
 using DG.Tweening;
+using Unity.VisualScripting;
 using UnityEngine.AI;
 
-public class HandcuffManager : MonoBehaviour
+public class HandcuffManager : MonoSingleton<HandcuffManager>
 {
     //Handcuff Managing
     public List<GameObject> handcuffList = new List<GameObject>();
     public Transform collectPoint;
 
     //Criminal Managing
-    private NavMeshAgent navCriminal;
+    
     public List<GameObject> criminalList = new List<GameObject>();
     
 
@@ -42,10 +45,12 @@ public class HandcuffManager : MonoBehaviour
             if (!criminal.IsCriminalCollected())
             {
                 criminal.CriminalCollected();
-                navCriminal = criminal.GetComponent<NavMeshAgent>();
-                navCriminal.SetDestination(transform.position);
-
+                criminal.targetTransform = collectPoint;
+                criminal.canFollow = true;
             }
         }
+        
+        
     }
+    
 }
