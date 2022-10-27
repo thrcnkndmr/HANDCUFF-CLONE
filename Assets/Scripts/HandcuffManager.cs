@@ -10,17 +10,23 @@ public class HandcuffManager : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Handcuff")
+        if (other.gameObject.CompareTag("Handcuff") )
         {
-            other.gameObject.transform.parent = collectPoint.transform;
-            var handcuff = other.gameObject;
-            var hcTransform = handcuff.transform.position;
-            handcuff.transform.DOMoveY(hcTransform.y + 5f, 0.3f)
-                .OnComplete(() => handcuff.transform.DOMoveY( collectPoint.transform.position.y + 1,0.3f));
+            CollectableHandcuff handcuff = other.GetComponent<CollectableHandcuff>();
             
+            if (!handcuff.IsHcCollected())
+            {
+                handcuff.Collected();
+                handcuff.transform.parent = collectPoint.transform;
+                float handcuffCount = handcuffList.Count;
 
+                handcuff.transform.DOLocalJump(
+                    new Vector3(collectPoint.localPosition.x, handcuffCount * 0.3f, collectPoint.localPosition.z), 5f, 1,
+                    0.6f).OnComplete(() => handcuff.transform.localEulerAngles = Vector3.zero);
+                handcuffList.Add(handcuff.gameObject);
+            }
         }
-
+        
         else if (other.gameObject.tag == "Criminal")
         {
         }

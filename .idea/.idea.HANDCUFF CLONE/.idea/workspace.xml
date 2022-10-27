@@ -8,6 +8,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CollectableHandcuff.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HandcuffManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -69,6 +70,7 @@
       <updated>1666806404333</updated>
       <workItem from="1666806426565" duration="638000" />
       <workItem from="1666807340609" duration="5157000" />
+      <workItem from="1666857532470" duration="5089000" />
     </task>
     <servers />
   </component>
