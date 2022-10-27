@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTouchMoved(TouchInput touchInput)
     {
-        playerAnimator.SetTrigger(Run);
+        playerAnimator.SetBool("RunB",true);
 
 
         float horizontal = dynamicJoystick.Horizontal;
@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTouchEnded(TouchInput touchInput)
     {
-        playerAnimator.SetTrigger(Idle);
+        playerAnimator.SetBool("RunB",false);
     }
     
 }
