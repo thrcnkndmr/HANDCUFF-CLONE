@@ -7,7 +7,7 @@ public class CollectingCriminal : MonoBehaviour
 
     public bool canFollow;
     public Transform targetTransform;
-    private NavMeshAgent navCriminal;
+    public NavMeshAgent navCriminal;
     private bool isCriminalCollected;
     private HandcuffManager handcuffManager;
 
@@ -17,7 +17,6 @@ public class CollectingCriminal : MonoBehaviour
         navCriminal = GetComponent<NavMeshAgent>();
         isCriminalCollected = false;
     }
-
     public bool IsCriminalCollected()
     {
         return isCriminalCollected;
@@ -27,7 +26,7 @@ public class CollectingCriminal : MonoBehaviour
     {
         isCriminalCollected = true;
     }
-
+    
     private void LateUpdate()
     {
         if (canFollow)
