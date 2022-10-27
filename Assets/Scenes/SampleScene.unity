@@ -914,6 +914,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: criminals (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5454552257922179647, guid: 7d5d53b96c972d648bb4a30d0b1610b3,
+        type: 3}
+      propertyPath: m_BaseOffset
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5741981438596582947, guid: 7d5d53b96c972d648bb4a30d0b1610b3,
         type: 3}
       propertyPath: m_RootOrder
