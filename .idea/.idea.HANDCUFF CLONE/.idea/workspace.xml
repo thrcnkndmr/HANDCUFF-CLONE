@@ -10,7 +10,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CollectingCriminal.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CollectingHandcuff.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HandcuffManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CollisionManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -71,7 +71,7 @@
       <updated>1666806404333</updated>
       <workItem from="1666806426565" duration="638000" />
       <workItem from="1666807340609" duration="5157000" />
-      <workItem from="1666857532470" duration="21490000" />
+      <workItem from="1666857532470" duration="32495000" />
     </task>
     <servers />
   </component>

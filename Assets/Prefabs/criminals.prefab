@@ -1140,7 +1140,7 @@ NavMeshAgent:
   m_Height: 1.63
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 1
 --- !u!136 &3768519989599773594
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1184,7 +1184,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canFollow: 0
-  targetTransform: {fileID: 0}
+  navCriminal: {fileID: 0}
+  handcuff: {fileID: 0}
 --- !u!1 &5065223805566894269
 GameObject:
   m_ObjectHideFlags: 0

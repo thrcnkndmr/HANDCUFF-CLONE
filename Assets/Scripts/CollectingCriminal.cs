@@ -6,14 +6,14 @@ public class CollectingCriminal : MonoBehaviour
 {
 
     public bool canFollow;
-    public Transform targetTransform;
     public NavMeshAgent navCriminal;
     private bool isCriminalCollected;
-    private HandcuffManager handcuffManager;
+    private CollisionManager collisionManager;
+    public GameObject handcuff;
 
     private void Start()
     {
-        handcuffManager = HandcuffManager.Instance;
+        collisionManager = CollisionManager.Instance;
         navCriminal = GetComponent<NavMeshAgent>();
         isCriminalCollected = false;
     }
@@ -27,11 +27,11 @@ public class CollectingCriminal : MonoBehaviour
         isCriminalCollected = true;
     }
     
-    private void LateUpdate()
+    private void Update()
     {
         if (canFollow)
         {
-            navCriminal.SetDestination(handcuffManager.collectPoint.position);
+            navCriminal.SetDestination(collisionManager.collectPoint.position);
         }
     }
 }
